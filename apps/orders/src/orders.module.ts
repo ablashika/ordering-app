@@ -16,7 +16,7 @@ import { Order, OrderSchema } from './schemas/oders.schema';
     validationSchema:Joi.object(  
      {
        // makes the check for our environment variable
-        MONGDODB_UR:Joi.string().required(),
+       MONGODB_URI:Joi.string().required(),
       }),
     //check path for the .env
     envFilePath:"./apps/orders/.env"
