@@ -15,4 +15,4 @@ export class Order extends AbstractDocument {
 
 }
 
-export const UserSchema = SchemaFactory.createForClass(Order);
+export const OrderSchema = SchemaFactory.createForClass(Order);
