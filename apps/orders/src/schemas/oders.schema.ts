@@ -11,7 +11,7 @@ export class Order extends AbstractDocument {
   phoneNumber: string;
 
   @Prop({ required: true })
-  price: string;
+  price: number;
 
 }
 

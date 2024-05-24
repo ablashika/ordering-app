@@ -8,6 +8,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { OdersRepository } from './oders.repository';
 import { Order, OrderSchema } from './schemas/oders.schema';
 
+
 @Module({
   imports: [
 
@@ -17,6 +18,7 @@ import { Order, OrderSchema } from './schemas/oders.schema';
      {
        // makes the check for our environment variable
        MONGODB_URI:Joi.string().required(),
+       PORT:Joi.number().required( )
       }),
     //check path for the .env
     envFilePath:"./apps/orders/.env"
